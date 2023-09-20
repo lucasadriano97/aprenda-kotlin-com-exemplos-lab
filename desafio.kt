@@ -54,3 +54,18 @@ fun main() {
     formacaoJedi.Treinar(aprendiz4)
     formacaoPadawan.Treinar(aprendiz5)
     formacaoJedi.Treinar(aprendiz6)
+
+
+        // Criar listagem com informações de cada aprendiz
+        println("Informações dos Aprendizes:")   
+        for (aprendiz in formacaoJedi.aprendizes + formacaoPadawan.aprendizes + formacaoNPC.aprendizes) {
+        val formacao = when (aprendiz) {
+            in formacaoJedi.aprendizes -> "Formação Jedi"
+            in formacaoPadawan.aprendizes -> "Formação Padawan"
+            in formacaoNPC.aprendizes -> "Formação NPC"
+            else -> "Formação não especificada"
+        }
+        val habilidade = aprendiz.idade % 2 // Apenas um exemplo de habilidade com base na idade (só para ilustração)
+        println("${aprendiz.nome} - Idade: ${aprendiz.idade}, Formação: $formacao, Habilidade: ${habilidadesJedi[habilidade].nome}, Duração: ${habilidadesJedi[habilidade].duracao}")
+    
+}
