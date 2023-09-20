@@ -2,7 +2,7 @@
 
 enum class Nivel { NPC, Padawan, Jedi }                                 // Cria classe para níveis (NPC, Padawan, Jedi), do tipo enum
 
-data class Usuario (nome: String, idade: Int)
+data class Aprendiz(val nome: String, val idade: Int)                   // Classe Aprendiz com nome e idade
 
 class ConteudoEducacional(val nome: String, var duracao: Int)
 
