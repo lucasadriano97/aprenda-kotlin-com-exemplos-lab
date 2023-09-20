@@ -10,9 +10,11 @@ data class Formacao(val nome: String, val nivel: Nivel, val habilidades: List<Ad
 
     val aprendizes = mutableListOf<Aprendiz>() // Lista mutável de aprendizes matriculados na formação
     
-    fun matricular(usuario: Usuario) {
-        //TODO("Utilize o parâmetro $usuario para simular uma matrícula (usar a lista de $inscritos).")
+   fun Treinar(aprendiz: Aprendiz) {
+        aprendizes.add(aprendiz)
+        println("O aprendiz ${aprendiz.nome} foi matriculado na formação $nome (Nível: $nivel).")
     }
+}
 }
 
 fun main() {
