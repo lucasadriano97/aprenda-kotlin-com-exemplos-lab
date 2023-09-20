@@ -34,8 +34,15 @@ fun main() {
         AdquirirHabilidade("Tarefas Domésticas", 1)
     )
     
-    // Criação de formações com diferentes níveis e habilidades
+    // Inserindo formações com diferentes níveis e habilidades
     val formacaoJedi = Formacao("Formação Jedi", Nivel.Jedi, habilidadesJedi)  
     val formacaoPadawan = Formacao("Formação Padawan", Nivel.Padawan, habilidadesPadawan)
     val formacaoNPC = Formacao("Formação NPC", Nivel.NPC, habilidadesNPC)
-    }
+   
+    // Inserindo aprendizes com nome e idade
+    val aprendiz1 = Aprendiz("Luke Skywalker", 25)    
+    val aprendiz2 = Aprendiz("Ahsoka Tano", 17)
+    val aprendiz3 = Aprendiz("Darth Vader", 35)
+    val aprendiz4 = Aprendiz("Obi-Wan Kenobi", 42)
+    val aprendiz5 = Aprendiz("Rey", 19)
+    val aprendiz6 = Aprendiz("Leia Organa", 29)
