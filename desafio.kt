@@ -4,7 +4,7 @@ enum class Nivel { NPC, Padawan, Jedi }                                 // Cria 
 
 data class Aprendiz(val nome: String, val idade: Int)                   // Classe Aprendiz com nome e idade
 
-class ConteudoEducacional(val nome: String, var duracao: Int)
+class AdquirirHabilidade(val nome: String, val duracao: Int)           // Classe de Habilidades com nome e duração
 
 data class Formacao(val nome: String, var conteudos: List<ConteudoEducacional>) {
 
