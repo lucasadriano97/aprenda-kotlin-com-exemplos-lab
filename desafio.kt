@@ -67,5 +67,5 @@ fun main() {
         }
         val habilidade = aprendiz.idade % 2 // Apenas um exemplo de habilidade com base na idade (só para ilustração)
         println("${aprendiz.nome} - Idade: ${aprendiz.idade}, Formação: $formacao, Habilidade: ${habilidadesJedi[habilidade].nome}, Duração: ${habilidadesJedi[habilidade].duracao}")
-    
+    }
 }
