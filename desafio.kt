@@ -8,7 +8,7 @@ class AdquirirHabilidade(val nome: String, val duracao: Int)           // Classe
 
 data class Formacao(val nome: String, val nivel: Nivel, val habilidades: List<AdquirirHabilidade>) {  // Classe Formação com nome, nível e habilidades
 
-    val inscritos = mutableListOf<Usuario>()
+    val aprendizes = mutableListOf<Aprendiz>() // Lista mutável de aprendizes matriculados na formação
     
     fun matricular(usuario: Usuario) {
         //TODO("Utilize o parâmetro $usuario para simular uma matrícula (usar a lista de $inscritos).")
