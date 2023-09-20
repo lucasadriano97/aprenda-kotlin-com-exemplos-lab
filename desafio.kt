@@ -15,9 +15,16 @@ data class Formacao(val nome: String, val nivel: Nivel, val habilidades: List<Ad
         println("O aprendiz ${aprendiz.nome} foi matriculado na formação $nome (Nível: $nivel).")
     }
 }
-}
+
 
 fun main() {
-    TODO("Analise as classes modeladas para este domínio de aplicação e pense em formas de evoluí-las.")
-    TODO("Simule alguns cenários de teste. Para isso, crie alguns objetos usando as classes em questão.")
-}
+    // Criação de listas de habilidades
+    val habilidadesJedi = listOf(            
+        AdquirirHabilidade("Força", 10),
+        AdquirirHabilidade("Sabre de Luz", 5),
+        AdquirirHabilidade("Telecinese", 8)
+    )
+    
+    
+    
+    }
