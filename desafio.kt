@@ -6,7 +6,7 @@ data class Aprendiz(val nome: String, val idade: Int)                   // Class
 
 class AdquirirHabilidade(val nome: String, val duracao: Int)           // Classe de Habilidades com nome e duração
 
-data class Formacao(val nome: String, var conteudos: List<ConteudoEducacional>) {
+data class Formacao(val nome: String, val nivel: Nivel, val habilidades: List<AdquirirHabilidade>) {  // Classe Formação com nome, nível e habilidades
 
     val inscritos = mutableListOf<Usuario>()
     
