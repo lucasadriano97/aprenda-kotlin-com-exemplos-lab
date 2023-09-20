@@ -46,3 +46,11 @@ fun main() {
     val aprendiz4 = Aprendiz("Obi-Wan Kenobi", 42)
     val aprendiz5 = Aprendiz("Rey", 19)
     val aprendiz6 = Aprendiz("Leia Organa", 29)
+
+
+    // Matrícula de aprendizes nas formações
+    formacaoPadawan.Treinar(aprendiz2)
+    formacaoNPC.Treinar(aprendiz3)
+    formacaoJedi.Treinar(aprendiz4)
+    formacaoPadawan.Treinar(aprendiz5)
+    formacaoJedi.Treinar(aprendiz6)
